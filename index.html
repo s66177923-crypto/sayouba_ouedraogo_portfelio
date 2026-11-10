@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sénior ASR — Portfolio</title>
+<meta name="description" content="Portfolio de Sénior ASR : développement web et solutions numériques, avec une rigueur de physicien.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#" id="logo"></a>
+    <nav>
+      <a href="#services">Services</a><a href="#projets">Projets</a><a href="#apropos">À propos</a><a href="#contact">Contact</a>
+      <button id="theme" aria-label="Changer de thème">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1 id="h1"></h1>
+      <p class="lead" id="lead"></p>
+      <div class="btns">
+        <a class="btn primary" id="cta1" href="#contact">Me contacter</a>
+        <a class="btn ghost" href="#projets">Voir mes projets</a>
+      </div>
+      <svg class="curve" viewBox="0 0 960 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 60 C 60 0, 120 0, 180 60 S 300 120, 360 60 S 480 0, 540 60 S 660 120, 720 60 S 840 0, 960 60"/>
+      </svg>
+    </div>
+
+    <section id="services"><h2>Ce que je fais pour vous</h2><div class="grid" id="services-list"></div></section>
+    <section id="projets"><h2>Projets</h2><div class="grid" id="projects-list"></div></section>
+
+    <section id="apropos">
+      <h2>À propos</h2>
+      <div class="about">
+        <div id="about-text"></div>
+        <div class="skills" id="skills"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2 id="contact-title"></h2>
+        <p id="contact-text"></p>
+        <div class="btns">
+          <a class="btn primary" id="wa" href="#">WhatsApp</a>
+          <a class="btn ghost" id="mail" href="#">E-mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="foot"></footer>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
